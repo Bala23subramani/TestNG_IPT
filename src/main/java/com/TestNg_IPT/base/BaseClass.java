@@ -137,10 +137,6 @@ public abstract class BaseClass {
 	public void clickMouse(WebElement element) {
 		act.click(element).perform();		
 	}
-	public void explicityWait(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 50);
-		wait.until(ExpectedConditions.visibilityOf(element)).click();;		
-	}
 
 	public static List<WebElement> getOptions(WebElement element) {
 		Select sel = new Select(element);
